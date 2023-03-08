@@ -16,7 +16,9 @@ namespace Concesionaria;
     public void AgregarAuto(Automovil a){
 
       if(a != null){
+
         if(AutosActual <= Limite){
+
           Automovil.Add(a);
           AutosActual++;
         }
@@ -25,9 +27,11 @@ namespace Concesionaria;
 
     public void MostrarAuto(Automovil a){
       if(a != null){
+
         foreach(Automovil item in Automovil){
 
           if(item == a){
+
             Console.WriteLine(item);
             return; 
           }
@@ -43,13 +47,13 @@ namespace Concesionaria;
         foreach(Automovil item in Automovil){
 
           if(item == a){
+
             Automovil.Remove(item);
             AutosActual--;
             return;
           }
         }
 
-          // Si no se encontro el auto 
         Console.WriteLine("El automovil no está en la consecionaria");
       }
     }
@@ -57,11 +61,13 @@ namespace Concesionaria;
     public void MostrarAutos(){
 
       foreach(Automovil item in Automovil){
+
           Console.WriteLine(item);
 	    }     
     }
     public void VaciarConcesionaria(){
-      Automovil = new List<Automovil>();
-      AutosActual = 0;
+
+      Automovil.Clear();
+      Console.WriteLine("YA NO HAY CARROS");
     }
 }
