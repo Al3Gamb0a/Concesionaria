@@ -2,71 +2,75 @@ namespace Concesionaria;
 
   class Concesionario{
 
-    List<Automovil> Automovil;
-    int Limite;
-    int AutosActual;
+    List<Automovil> Automoviles;
+    public int Limite;
+    public int AutosActual;
 
     public Concesionario(int Limite){
 
-      Automovil = new List<Automovil>();
+      Automoviles = new List<Automovil>();
       this.Limite = Limite;
       AutosActual = 0;
     }
 
-    public void AgregarAuto(Automovil a){
+    public void AgregarAuto(Automovil autoNuevo){
 
-      if(a != null){
+      if(autoNuevo != null && AutosActual != Limite){
+        Automovil? AutoEncontrado = Automoviles.Find((Automovil)=>Automovil.ID==autoNuevo.ID);
 
-        if(AutosActual <= Limite){
-
-          Automovil.Add(a);
+        if (AutoEncontrado == null){
+          Automoviles.Add(autoNuevo);
           AutosActual++;
+            } 
         }
       }
+    
+
+    public void MostrarAuto(string ID){
+  
+    Automovil? AutoEncontrado = Automoviles.Find((a)=>a.ID==ID);
+
+    if(AutoEncontrado!=null)
+      Console.WriteLine(AutoEncontrado.ToString());
+ 
+
     }
 
-    public void MostrarAuto(Automovil a){
-      if(a != null){
+    public void EliminarAuto(string ID){
 
-        foreach(Automovil item in Automovil){
+      if(ID != "" && AutosActual!=0){
+        Automovil? AutoEncontrado = Automoviles.Find((a)=>a.ID == ID);
 
-          if(item == a){
+      if (AutoEncontrado != null){
+        Automoviles.Remove(AutoEncontrado);
+        AutosActual --;
+      }
+      else{
+        Console.Write("No hay autos para sacar");
+      }
 
-            Console.WriteLine(item);
-            return; 
+   /*
+(a)=>a.ID == ID
+  function (Automovil a){
+    if (a.ID == ID)
+      return a;
+  }
+*/
+      }
           }
-        }
-        Console.WriteLine("El automovil que buscas no está en la Concesionaria");
-      }
-    }
-
-    public void EliminarAuto(Automovil a){
-
-      if(a != null){
-
-        foreach(Automovil item in Automovil){
-
-          if(item == a){
-
-            Automovil.Remove(item);
-            AutosActual--;
-            return;
-          }
-        }
-        Console.WriteLine("El automovil no está en la consecionaria");
-      }
-    }
 
     public void MostrarAutos(){
 
-      foreach(Automovil item in Automovil){
+      foreach(Automovil item in Automoviles){
 
           Console.WriteLine(item);
 	    }     
     }
     public void VaciarConcesionaria(){
 
-      Automovil.Clear();
+      Automoviles.Clear();
+      Automoviles = new List<Automovil>();
+      AutosActual = 0;
       Console.WriteLine("YA NO HAY CARROS");
     }
 }

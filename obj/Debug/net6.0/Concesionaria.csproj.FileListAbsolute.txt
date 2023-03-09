@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\bin\Debug\net6.0\Concesionaria.exe
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\bin\Debug\net6.0\Concesionaria.deps.json
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\bin\Debug\net6.0\Concesionaria.runtimeconfig.json
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\bin\Debug\net6.0\Concesionaria.dll
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\bin\Debug\net6.0\Concesionaria.pdb
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\obj\Debug\net6.0\Concesionaria.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\obj\Debug\net6.0\Concesionaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\obj\Debug\net6.0\Concesionaria.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\obj\Debug\net6.0\Concesionaria.AssemblyInfo.cs
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\obj\Debug\net6.0\Concesionaria.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\obj\Debug\net6.0\Concesionaria.dll
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\obj\Debug\net6.0\refint\Concesionaria.dll
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\obj\Debug\net6.0\Concesionaria.pdb
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\obj\Debug\net6.0\Concesionaria.genruntimeconfig.cache
+C:\Users\Usuario\Documents\LENGUAJES 4\Concesionaria\obj\Debug\net6.0\ref\Concesionaria.dll
