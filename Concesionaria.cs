@@ -26,7 +26,7 @@ namespace Concesionaria;
       }
     
 
-    public void MostrarAuto(string ID){
+    public void MostrarAuto(string? ID){
   
     Automovil? AutoEncontrado = Automoviles.Find((a)=>a.ID==ID);
 
@@ -36,7 +36,7 @@ namespace Concesionaria;
 
     }
 
-    public void EliminarAuto(string ID){
+    public void EliminarAuto(string? ID){
 
       if(ID != "" && AutosActual!=0){
         Automovil? AutoEncontrado = Automoviles.Find((a)=>a.ID == ID);
