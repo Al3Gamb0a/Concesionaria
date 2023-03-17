@@ -13,7 +13,8 @@ namespace Concesionaria;
         Console.WriteLine("2.- Eliminar Automovil");
         Console.WriteLine("3.- Buscar Automovil");
         Console.WriteLine("4.- Listar todos");
-        Console.WriteLine("5.- Salir");
+        Console.WriteLine("5.- Vaciar Concesionaria");
+        Console.WriteLine("6.- Salir");
         Console.Write("Tu opción: ");
 
         switch(Console.ReadLine()) {
@@ -37,7 +38,12 @@ namespace Concesionaria;
                 Console.ReadLine();
                 return true;
 
-                case "5": 
+                case "5":
+                VaciarConcesionaria();
+                Console.ReadLine();
+                return true;
+
+                case "6": 
                 Console.WriteLine("Gracias por usar :)");
                 Console.ReadLine();
                 return false;
@@ -88,5 +94,9 @@ namespace Concesionaria;
 
         public void MostrarConcesionaria(){
             concesionario.MostrarAutos();
+        }
+
+        public void VaciarConcesionaria(){
+            concesionario.VaciarConcesionaria();
         }
     }
